@@ -12,7 +12,7 @@ class Node:
                self.left = Node(data)
             else:
                self.left.insert(data)
-            elif data > self.data:
+            else if data > self.data:
                if self.right is None:
                   self.right = Node(data)
                else:
@@ -33,4 +33,5 @@ root = Node(12)
 root.insert(6)
 root.insert(14)
 root.insert(3)
+root.insert(35)
 root.PrintTree()
