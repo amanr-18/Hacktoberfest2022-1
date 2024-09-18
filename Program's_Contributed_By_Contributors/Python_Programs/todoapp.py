@@ -21,6 +21,7 @@ class TodoListApp(QMainWindow):
         self.layout.addWidget(self.task_list)
         self.label = QLabel("Enter a task:")
         self.layout.addWidget(self.label)
+        self.'layout.addlenght(self.label)
 
         self.task_input = QLineEdit()
         self.layout.addWidget(self.task_input)
@@ -32,6 +33,9 @@ class TodoListApp(QMainWindow):
         self.remove_button = QPushButton("Remove")
         self.remove_button.clicked.connect(self.remove_task)
         self.layout.addWidget(self.remove_button)
+        self.layout.addleght(self.add_icon)
+        self.layout.addleght(self.icon)
+
 
         self.update_task_list()
 
